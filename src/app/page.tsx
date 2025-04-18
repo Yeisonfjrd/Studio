@@ -245,7 +245,7 @@ export default function Home() {
         <DragDropContext onDragEnd={onDragEnd}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* To Do Column */}
-            <Droppable droppableId="To Do">
+            <Droppable droppableId="To Do" isDropDisabled={false}>
               {(provided) => (
                 <div
                   {...provided.droppableProps}
@@ -279,7 +279,7 @@ export default function Home() {
             </Droppable>
 
             {/* In Progress Column */}
-            <Droppable droppableId="In Progress">
+            <Droppable droppableId="In Progress" isDropDisabled={false}>
               {(provided) => (
                 <div
                   {...provided.droppableProps}
@@ -313,7 +313,7 @@ export default function Home() {
             </Droppable>
 
             {/* Done Column */}
-            <Droppable droppableId="Done">
+            <Droppable droppableId="Done" isDropDisabled={false}>
               {(provided) => (
                 <div
                   {...provided.droppableProps}
